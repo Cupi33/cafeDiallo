@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Menu</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Café Delight</h2>
+  </div>
+
+  <!-- Drinks Section -->
+  <h2 class="section-title">Drinks</h2>
+  <hr class="section-divider">
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="./images/caramelMachiato.png" alt="Coffee" />
+      <h3>Caramel Machiato</h3>
+      <p>RM8.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/cappucino.png" alt="Coffee" />
+      <h3>Cappuccino</h3>
+      <p>RM7.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/latte.png" alt="Coffee" />
+      <h3>Latte</h3>
+      <p>RM8.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Food Section -->
+  <h2 class="section-title">Food</h2>
+  <hr class="section-divider">
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="./images/maccheese.png" alt="Donut" />
+      <h3>Mac & Cheese</h3>
+      <p>RM7.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/cheesecake.png" alt="Cheesecake" />
+      <h3>Cheesecake</h3>
+      <p>RM6.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./images/spaghetti.png" alt="Spaghetti" />
+      <h3>Spaghetti</h3>
+      <p>RM9.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</button>
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total"></p>
+    <div class="modal-actions">
+      <button id="proceed-button">Proceed</button>
+      <button id="close-button" href="checkOrder.html">Close</button>
+    </div>
+  </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
