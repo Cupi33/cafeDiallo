@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarapan - Café Delight</title>
+  <link rel="stylesheet" href="/css/displayMenu.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Café Delight</h2>
+  </div>
+
+  <div class="product-container">
+    <h1>Sarapan</h1>
+    <p class="category-description">Traditional Malaysian breakfast items to start your day right</p>
+    
+    <div class="product-grid">
+      <div class="product-card" data-id="1">
+        <img src="./images/nasi-lemak.jpg" alt="Nasi Lemak" />
+        <h3>Nasi Lemak</h3>
+        <p>RM8.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-id="2">
+        <img src="./images/roti-canai.jpg" alt="Roti Canai" />
+        <h3>Roti Canai</h3>
+        <p>RM4.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-id="3">
+        <img src="./images/tosai.jpg" alt="Tosai" />
+        <h3>Tosai</h3>
+        <p>RM5.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</button>
+  
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total"></p>
+      <div class="modal-actions">
+        <button id="proceed-button">Proceed</button>
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/deliveryScript/script.js"></script>
+</body>
+</html>

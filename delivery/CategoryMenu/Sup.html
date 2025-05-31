@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarapan - Café Delight</title>
+  <link rel="stylesheet" href="/css/displayMenu.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Café Delight</h2>
+  </div>
+
+  <div class="product-container">
+    <h1>Sarapan</h1>
+    <p class="category-description">Trying our signature soup </p>
+    
+    <div class="product-grid">
+      <div class="product-card" data-id="4">
+        <img src="./images/nasi-lemak.jpg" alt="Sup Gearbox Kambing" />
+        <h3>Sup Gearbox Kambing</h3>
+        <p>RM19.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-id="5">
+        <img src="./images/roti-canai.jpg" alt="Sup Kambing" />
+        <h3>Sup Kambing</h3>
+        <p>RM20.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-id="6">
+        <img src="./images/tosai.jpg" alt="Sup Daging" />
+        <h3>Sup Daging</h3>
+        <p>RM8.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="7">
+        <img src="./images/tosai.jpg" alt="Sup Ayam" />
+        <h3>Sup Ayam</h3>
+        <p>RM7.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="8">
+        <img src="./images/tosai.jpg" alt="Nasi Bujang" />
+        <h3>Nasi Bujang+Sambal Belacan+Ulaman</h3>
+        <p>RM5.00</p>
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Add-On Section -->
+  <h2 class="section-title">Add On</h2>
+  <hr class="section-divider">
+  <div class="product-grid">
+    <div class="product-card" data-id="9">
+      <img src="./images/maccheese.png" alt="Mee" />
+      <h3>Mee</h3>
+      <p>RM2.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div> 
+    </div>
+
+    <div class="product-card" data-id="10">
+      <img src="./images/cheesecake.png" alt="Mee Hon" />
+      <h3>Mee Hon</h3>
+      <p>RM2.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="11">
+      <img src="./images/spaghetti.png" alt="Kuey Teow" />
+      <h3>Kuey Teow</h3>
+      <p>RM2.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="12">
+      <img src="./images/spaghetti.png" alt="Roti Francis" />
+      <h3>Roti Francis</h3>
+      <p>RM2.50</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    
+  </div>
+  </div>
+
+  <button id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</button>
+  
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total"></p>
+      <div class="modal-actions">
+        <button id="proceed-button">Proceed</button>
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/deliveryScript/script.js"></script>
+</body>
+</html>

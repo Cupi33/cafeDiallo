@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Delight - Categories</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Café Delight</h2>
+  </div>
+
+  <div class="category-container">
+    <h1>Our Menu Categories</h1>
+    
+    <div class="category-grid">
+      <a href="./CategoryMenu/Sarapan.html" class="category-card">
+        <img src="./images/sarapan.jpg" alt="Sarapan" />
+        <h3>Sarapan</h3>
+        <p>Traditional breakfast items</p>
+      </a>
+      
+      <a href="./CategoryMenu/Sup.html" class="category-card">
+        <img src="./images/sup.jpg" alt="Sup" />
+        <h3>Sup</h3>
+        <p>Hearty soups and broths</p>
+      </a>
+      
+      <a href="meerebus.html" class="category-card">
+        <img src="./images/mee-rebus.jpg" alt="Mee Rebus" />
+        <h3>Mee Rebus</h3>
+        <p>Classic noodle dishes</p>
+      </a>
+    </div>
+    <div class="category-grid">
+      <a href="./CategoryMenu/Sarapan.html" class="category-card">
+        <img src="./images/sarapan.jpg" alt="Sarapan" />
+        <h3>Roti Canai</h3>
+        <p>Classic roti </p>
+      </a>
+      
+      <a href="sup.html" class="category-card">
+        <img src="./images/sup.jpg" alt="Sup" />
+        <h3>Set Tengah Hari</h3>
+        <p>Variety of Lauk Pauk</p>
+      </a>
+      
+      <a href="meerebus.html" class="category-card">
+        <img src="./images/mee-rebus.jpg" alt="Mee Rebus" />
+        <h3>Menu Ikan</h3>
+        <p>Try our signature fish dishes</p>
+      </a>
+    </div>
+
+    <div class="category-grid">
+      <a href="./CategoryMenu/Sarapan.html" class="category-card">
+        <img src="./images/sarapan.jpg" alt="Sarapan" />
+        <h3>Ala-Carte Menu</h3>
+        <p>Prefer the routine dishes </p>
+      </a>
+      
+      <a href="sup.html" class="category-card">
+        <img src="./images/sup.jpg" alt="Sup" />
+        <h3>Western Food</h3>
+        <p>Delicious western dishes</p>
+      </a>
+      
+      <a href="meerebus.html" class="category-card">
+        <img src="./images/mee-rebus.jpg" alt="Mee Rebus" />
+        <h3>Goreng-Goreng</h3>
+        <p>Pick the routine dishes</p>
+      </a>
+    </div>
+
+    <div class="category-grid">
+      <a href="./CategoryMenu/Sarapan.html" class="category-card">
+        <img src="./images/sarapan.jpg" alt="Sarapan" />
+        <h3>Drink</h3>
+        <p>Fancy the juice for your soreness </p>
+      </a>
+    </div>
+  </div>
+
+  <button id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</button>
+  
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total"></p>
+    <div class="modal-actions">
+      <button id="proceed-button">Proceed</button>
+      <button id="close-button">Close</button>
+    </div>
+  </div>
+</div>
+
+  <script src="/js/deliveryScript/script.js"></script>
+</body>
+</html>
