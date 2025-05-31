@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarapan - Café Delight</title>
+  <link rel="stylesheet" href="/css/displayMenu.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Café Delight</h2>
+  </div>
+
+  <div class="product-container">
+    <h1>Sarapan</h1>
+    <p class="category-description">Traditional Malaysian breakfast items to start your day right</p>
+    
+
+  <h2 class="section-title">Roti Canai</h2>
+  <hr class="section-divider">
+  <div class="product-grid">
+    <div class="product-card" data-id="26">
+      <h3>Roti Kosong</h3>
+      <p>RM1.50</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div> 
+    </div>
+
+    <div class="product-card" data-id="27">
+      <h3>Roti Kosong Bawang</h3>
+      <p>RM2.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="28">
+      <h3>Roti Tampal</h3>
+      <p>RM2.80</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="29">
+      <h3>Roti Telur</h3>
+      <p>RM2.80</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="30">
+      <h3>Roti Pisang</h3>
+      <p>RM4.50</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="31">
+      <h3>Roti Sardin</h3>
+      <p>RM6.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+    
+    <div class="product-card" data-id="32">
+      <h3>Roti Bom</h3>
+      <p>RM2.50</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-id="33">
+      <h3>Roti Planta</h3>
+      <p>RM3.00</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  <button id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</button>
+  
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total"></p>
+      <div class="modal-actions">
+        <button id="proceed-button">Proceed</button>
+        <button id="clear-button">Clear</button>
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/deliveryScript/script.js"></script>
+</body>
+</html>
