@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Check Order - Café Delight</title>
-  <link rel="stylesheet" href="./css/checkOrder.css" />
+  <link rel="stylesheet" href="../css/checkOrder.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -42,51 +42,32 @@
       <button id="cancel-order" class="btn danger">Cancel Order</button>
     </div>
   </div>
-
-  <script src="./js/script.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const cart = JSON.parse(localStorage.getItem('cart')) || {};
-      const orderItems = document.getElementById('order-items');
-      const orderTotal = document.getElementById('order-total');
-      
-      let total = 0;
-      orderItems.innerHTML = '';
-      
-      for (const item in cart) {
-        const subtotal = cart[item].price * cart[item].quantity;
-        total += subtotal;
-        
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item}</td>
-          <td>RM${cart[item].price.toFixed(2)}</td>
-          <td>${cart[item].quantity}</td>
-          <td>RM${subtotal.toFixed(2)}</td>
-        `;
-        orderItems.appendChild(row);
-      }
-      
-      orderTotal.textContent = `RM${total.toFixed(2)}`;
-      
-      // Button event listeners
-      document.getElementById('make-payment').addEventListener('click', () => {
-        alert('Redirecting to payment gateway...');
-        window.location.href = 'statusOrder.html';
-        // In a real app, you would redirect to payment page
-      });
-      
-      document.getElementById('update-order').addEventListener('click', () => {
-        window.location.href = 'home.html';
-      });
-      
-      document.getElementById('cancel-order').addEventListener('click', () => {
-        if (confirm('Are you sure you want to cancel this order?')) {
-          localStorage.removeItem('cart');
-          window.location.href = 'home.html';
-        }
-      });
-    });
-  </script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cart = JSON.parse(localStorage.getItem('cart')) || {};
+    const orderItems = document.getElementById('order-items');
+    const orderTotal = document.getElementById('order-total');
+
+    let total = 0;
+
+    for (const id in cart) {
+      const item = cart[id];
+      const subtotal = item.price * item.quantity;
+      total += subtotal;
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${item.name}</td>
+        <td>RM${item.price.toFixed(2)}</td>
+        <td>${item.quantity}</td>
+        <td>RM${subtotal.toFixed(2)}</td>
+      `;
+      orderItems.appendChild(row);
+    }
+
+    orderTotal.textContent = `RM${total.toFixed(2)}`;
+  });
+</script>
+
 </body>
 </html>

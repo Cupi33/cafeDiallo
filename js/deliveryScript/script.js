@@ -119,9 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   proceedButton.addEventListener('click', () => {
-    alert('Proceeding to checkout!');
-    cartModal.style.display = 'none';
-  });
+  cartModal.style.display = 'none';
+  window.location.href = '/delivery/checkOrder.html'; // or full path if needed
+});
+
 
   // Show correct total on load
   updateCartCount();
