@@ -42,32 +42,7 @@
       <button id="cancel-order" class="btn danger">Cancel Order</button>
     </div>
   </div>
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const cart = JSON.parse(localStorage.getItem('cart')) || {};
-    const orderItems = document.getElementById('order-items');
-    const orderTotal = document.getElementById('order-total');
 
-    let total = 0;
-
-    for (const id in cart) {
-      const item = cart[id];
-      const subtotal = item.price * item.quantity;
-      total += subtotal;
-
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${item.name}</td>
-        <td>RM${item.price.toFixed(2)}</td>
-        <td>${item.quantity}</td>
-        <td>RM${subtotal.toFixed(2)}</td>
-      `;
-      orderItems.appendChild(row);
-    }
-
-    orderTotal.textContent = `RM${total.toFixed(2)}`;
-  });
-</script>
-
+  <script src="/js/deliveryScript/checkOrder.js"></script>
 </body>
 </html>
