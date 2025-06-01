@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Make Payment Button (if you want to implement this later)
-    // document.getElementById('make-payment').addEventListener('click', () => {
-    //     // Payment processing logic would go here
-    // });
+    document.getElementById('make-payment').addEventListener('click', () => {
+        window.location.href = 'statusOrder.html';
+    });
 });
